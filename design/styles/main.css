@@ -1,0 +1,177 @@
+main{
+    margin-top: 60px;
+    width: 100%;
+}
+
+.introduction{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.introduction img{
+    width: 100%;
+    height: 100%;
+}
+
+.about-text-container1{
+    background-color: #ec7c40e4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 40px 40px;
+}
+
+.about-text-container1 h1{
+    font-family: 'Nanito', 'Arial';
+    font-size: 54px;
+    margin-bottom: 40px;
+}
+
+.about-text-container1 p{
+    font-family: 'Kode Nono', 'Arial';
+    color: #47301C;
+    font-size: 20px;
+}
+
+.about-apex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'text image';
+}
+
+.about-apex img{
+    grid-area: image;
+    width: 100%;
+    height: 100%;
+}
+
+.about-text-container2{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background-color: #39373A;
+    padding: 40px 40px;
+}
+
+.about-text-container2 h1{
+    font-family: 'Nanito', 'Arial';
+    font-size: 54px;
+    color: #C1C0D0;
+    margin-bottom: 40px;
+}
+
+.about-text-container2 p{
+    font-family: 'Kode Nono', 'Arial';
+    color: #C7C1C3;
+    font-size: 20px;
+}
+
+.community-help{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.community-help img{
+    width: 100%;
+    height: 100%;
+}
+
+.community-text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background-color: #CB2235;
+    padding: 40px 40px;
+}
+
+.community-text h1{
+    font-family: 'Nanito', 'Arial';
+    font-size: 54px;
+    color: #EA8C9C;
+    margin-bottom: 40px;
+}
+
+.community-text p{
+    font-family: 'Kode Nono', 'Arial';
+    color: #F1ABB5;
+    font-size: 20px;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 40px 30px;
+    gap: 30px;
+}
+
+footer h3{
+    color: rgba(128, 128, 128, 0.685);
+    font-family: 'Nanito', 'Arial';
+    font-size: 36px;
+}
+
+.icons-container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.icons-container i{
+    font-size: 25px;
+    color: rgba(128, 128, 128, 0.685);
+}
+
+.icons-container div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icons-container div p{
+    color: rgba(128, 128, 128, 0.685);
+    font-family: 'Kode Nono', 'Arial';
+    font-size: 18px;
+}
+
+footer hr{
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.685);
+}
+
+@media(max-width: 900px){
+    .introduction, .about-apex, .community-help{
+        grid-template-columns: 1fr;
+        grid-template-areas: none;
+    }
+
+    .about-apex img{
+        grid-area: auto;
+    }
+
+    .introduction h1, .about-apex h1, .community-help h1{
+        font-size: 40px;
+    }
+
+    .introduction br, .about-apex br, .community-help br{
+        display: none;
+    }
+
+    footer h3{
+        font-size: 25px;
+    }
+
+    .icons-container i{
+        font-size: 18px;
+    }
+
+    .icons-container div p{
+        font-size: 15px;
+    }
+}
